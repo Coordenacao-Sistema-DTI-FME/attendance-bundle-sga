@@ -262,13 +262,14 @@
                                                 <label for="observacao">{{ 'label.notes'|trans }}</label>
                                                 <textarea id="observacao" class="form-control" v-model="atendimento.observacao" rows="8"></textarea>
                                             </div>
-                                            <div class="form-check">
-                                                <input id="redirecionar-check" class="form-check-input" type="checkbox" v-model="redirecionarAoEncerrar">
-                                                <label class="form-check-label" for="redirecionar-check">
-                                                    {{ 'label.redirect_attendance'|trans }}
-                                                </label>
-                                            </div>
-
+                                            {# 
+                                                <div class="form-check">
+                                                    <input id="redirecionar-check" class="form-check-input" type="checkbox" v-model="redirecionarAoEncerrar">
+                                                    <label class="form-check-label" for="redirecionar-check">
+                                                        {{ 'label.redirect_attendance'|trans }}
+                                                    </label>
+                                                </div>
+                                            #}
 
                                         </div>
                                         <div class="card-footer">
@@ -281,24 +282,14 @@
                                                     <i class="fa fa-stop"></i>
                                                     <span>{{ 'button.finish'|trans }}</span>
                                                 </button>
-                                                {% if false %}
-                                                    <button type="button"
-                                                            class="btn"
-                                                            title="{{ 'button.redirect'|trans }}"
-                                                            v-bind:disabled="busy"
-                                                            v-on:click="encerrarVoltar">
-                                                        <i class="fa fa-chevron-left"></i>
-                                                        <span>{{ 'button.back'|trans }}</span>
-                                                    </button>
-                                                {% endif %}
-                                                {# <button type="button"
-                                                            class="btn"
-                                                            title="{{ 'button.redirect'|trans }}"
-                                                            v-bind:disabled="busy"
-                                                            v-on:click="encerrarVoltar">
-                                                        <i class="fa fa-chevron-left"></i>
-                                                        <span>{{ 'button.back'|trans }}</span>
-                                                    </button> #}
+                                                <button type="button"
+                                                        class="btn"
+                                                        title="{{ 'button.redirect'|trans }}"
+                                                        v-bind:disabled="busy"
+                                                        v-on:click="encerrarVoltar">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    <span>{{ 'button.back'|trans }}</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
