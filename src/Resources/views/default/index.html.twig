@@ -281,14 +281,17 @@
                                                     <i class="fa fa-stop"></i>
                                                     <span>{{ 'button.finish'|trans }}</span>
                                                 </button>
-                                                <button type="button"
-                                                        class="btn"
-                                                        title="{{ 'button.redirect'|trans }}"
-                                                        v-bind:disabled="busy"
-                                                        v-on:click="encerrarVoltar">
-                                                    <i class="fa fa-chevron-left"></i>
-                                                    <span>{{ 'button.back'|trans }}</span>
-                                                </button>
+                                                
+                                                {#
+                                                    <button type="button"
+                                                            class="btn"
+                                                            title="{{ 'button.redirect'|trans }}"
+                                                            v-bind:disabled="busy"
+                                                            v-on:click="encerrarVoltar">
+                                                        <i class="fa fa-chevron-left"></i>
+                                                        <span>{{ 'button.back'|trans }}</span>
+                                                    </button>
+                                                #}
                                             </div>
                                         </div>
                                     </div>
