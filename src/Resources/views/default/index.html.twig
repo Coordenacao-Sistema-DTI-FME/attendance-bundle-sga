@@ -97,16 +97,18 @@
                                         <span>{{ 'button.not_show'|trans }}</span>
                                     </button>
                                 </div>
-                                <div class="col d-grid">
-                                    <button type="button"
-                                            class="btn btn-warning"
-                                            title="{{ 'button.error'|trans }}"
-                                            v-bind:disabled="busy || !atendimento || (atendimento && atendimento.status !== 'iniciado')"
-                                            v-on:click="erroTriagem">
-                                        <i class="fa fa-exclamation-triangle"></i>
-                                        <span>{{ 'button.error'|trans }}</span>
-                                    </button>
-                                </div>
+                                {# 
+                                    <div class="col d-grid">
+                                        <button type="button"
+                                                class="btn btn-warning"
+                                                title="{{ 'button.error'|trans }}"
+                                                v-bind:disabled="busy || !atendimento || (atendimento && atendimento.status !== 'iniciado')"
+                                                v-on:click="erroTriagem">
+                                            <i class="fa fa-exclamation-triangle"></i>
+                                            <span>{{ 'button.error'|trans }}</span>
+                                        </button>
+                                    </div>
+                                #}
                             </div>
 
                             <div v-if="!atendimento" class="text-center text-muted my-3 py-5 border rounded">
