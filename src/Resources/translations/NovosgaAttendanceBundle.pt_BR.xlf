@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="6">
         <source>label.customer</source>
-        <target>Cliente</target>
+        <target>Responsável</target>
       </trans-unit>
       <trans-unit id="7">
         <source>label.customer.name</source>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="8">
         <source>label.customer.id</source>
-        <target>Documento</target>
+        <target>CPF</target>
       </trans-unit>
       <trans-unit id="9">
         <source>label.services.available</source>
@@ -328,11 +328,11 @@
       </trans-unit>
       <trans-unit id="modal.customer">
         <source>modal.customer</source>
-        <target>Editar cliente</target>
+        <target>Editar Responsável</target>
       </trans-unit>
       <trans-unit id="label.edit_customer_info">
         <source>label.edit_customer_info</source>
-        <target>Para editar o cliente primeiro precisa iniciar o atendimento</target>
+        <target>Para editar o responsável primeiro precisa iniciar o atendimento</target>
       </trans-unit>
       <trans-unit id="label.configuration">
         <source>label.configuration</source>
@@ -348,11 +348,11 @@
       </trans-unit>
       <trans-unit id="label.configuration.option_client_name">
         <source>label.configuration.option_client_name</source>
-        <target>Nome do cliente</target>
+        <target>Nome do responsável</target>
       </trans-unit>
       <trans-unit id="label.configuration.option_ticket_client_name">
         <source>label.configuration.option_ticket_client_name</source>
-        <target>Número da senha e nome do cliente</target>
+        <target>Número da senha e nome do responsável</target>
       </trans-unit>
       <trans-unit id="label.all_services">
         <source>label.all_services</source>
@@ -428,7 +428,7 @@
       </trans-unit>
       <trans-unit id="error.save_customer">
         <source>error.save_customer</source>
-        <target>Erro ao salvar cliente</target>
+        <target>Erro ao salvar responsável</target>
       </trans-unit>
     </body>
   </file>
