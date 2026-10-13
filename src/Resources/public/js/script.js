@@ -214,6 +214,23 @@
             },
             
             fazEncerrar(isRedirect) {
+
+                const cliente = this.atendimento?.cliente;
+
+                const nome = cliente?.nome?.trim() || '';
+                const cpf = cliente?.documento?.trim() || '';
+
+                 if (!nome || !cpf) {
+                    swal({
+                        title: 'Dados do cliente incompletos',
+                        text: 'Para encerrar o atendimento, é necessário preencher o nome e o CPF do cliente.',
+                        type: 'warning',
+                        buttons: ['OK']
+                    });
+
+                    return;
+                }
+
                 const servicos = this.servicosRealizados.map((servico) => servico.id);
                 if (servicos.length === 0) {
                     swal({

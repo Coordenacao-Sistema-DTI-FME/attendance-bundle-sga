@@ -278,6 +278,10 @@
         <source>label.notes</source>
         <target>Observação</target>
       </trans-unit>
+      <trans-unit id="64-4">
+        <source>label.notes.responsavel</source>
+        <target>Observação do Responsável</target>
+      </trans-unit>
       <trans-unit id="64-1">
         <source>label.resolution</source>
         <target>Resolução</target>
