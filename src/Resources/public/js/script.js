@@ -196,30 +196,21 @@
             },
             
             preparaEncerrar() {
-                    const cliente = this.atendimento?.cliente;
+                const cliente = this.atendimento?.cliente;
 
-                    const nome = cliente?.nome?.trim() || '';
-                    const cpf = cliente?.documento?.trim() || '';
+                const nome = cliente?.nome?.trim() || '';
+                const cpf = cliente?.documento?.trim() || '';
 
-                    if (!nome || !cpf) {
-                        swal({
-                            title: 'Dados do cliente incompletos',
-                            text: 'Preencha o nome e o CPF do cliente antes de encerrar o atendimento.',
-                            icon: 'warning',
-                            buttons: {
-                                confirm: {
-                                    text: 'OK',
-                                    value: true,
-                                    visible: true,
-                                    className: 'btn btn-primary'
-                                }
-                            },
-                            closeOnClickOutside: false,
-                            closeOnEsc: true
-                        });
+                if (!nome || !cpf) {
+                    swal({
+                        title: 'Dados do cliente incompletos',
+                        text: 'Preencha o nome e o CPF do cliente antes de encerrar o atendimento.',
+                        type: 'warning',
+                        buttons: ['OK']
+                    });
 
-                        return;
-                    }
+                    return;
+                }
 
                 this.servicosRealizados = [];
                 this.servicosUsuario = JSON.parse(JSON.stringify(servicosUsuario));
