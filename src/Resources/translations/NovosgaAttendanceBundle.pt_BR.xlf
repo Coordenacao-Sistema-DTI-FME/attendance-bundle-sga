@@ -292,7 +292,7 @@
       </trans-unit>
       <trans-unit id="64-3">
         <source>label.resolution_pending</source>
-        <target>Pendente</target>
+        <target>Documentação Pendente</target>
       </trans-unit>
       <trans-unit id="65">
         <source>label.redirect.new_user</source>

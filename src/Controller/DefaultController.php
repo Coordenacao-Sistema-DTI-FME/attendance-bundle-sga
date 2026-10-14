@@ -583,6 +583,9 @@ class DefaultController extends AbstractController
         $validResolutionValues = [
             AtendimentoServiceInterface::RESOLVIDO,
             AtendimentoServiceInterface::PENDENTE,
+            'resolvido_parcialmente',
+            'encaminhado',
+            'nao_resolvido',
         ];
         if (in_array($data->resolucao, $validResolutionValues)) {
             $atual->setResolucao($data->resolucao);
