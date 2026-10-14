@@ -197,7 +197,6 @@
             
             preparaEncerrar() {
                 const cliente = this.atendimento?.cliente;
-
                 const nome = cliente?.nome?.trim() || '';
                 const cpf = cliente?.documento?.trim() || '';
 
@@ -205,8 +204,8 @@
                     swal({
                         title: 'Dados do cliente incompletos',
                         text: 'Preencha o nome e o CPF do cliente antes de encerrar o atendimento.',
-                        type: 'warning',
-                        buttons: ['OK']
+                        icon: 'warning',
+                        button: 'Fechar'
                     });
 
                     return;
@@ -214,14 +213,17 @@
 
                 this.servicosRealizados = [];
                 this.servicosUsuario = JSON.parse(JSON.stringify(servicosUsuario));
+
                 if (this.servicosUsuario.length === 1) {
                     const su = this.servicosUsuario[0];
+
                     if (su.subServicos.length === 0) {
                         this.addServicoRealizado(su.servico);
                     } else if (su.subServicos.length === 1) {
                         this.addServicoRealizado(su.subServicos[0]);
                     }
                 }
+
                 this.atendimento.status = 'encerrando';
             },
             
